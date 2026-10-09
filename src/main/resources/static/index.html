@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Mini Shop</h1>
+    <button id="cart-toggle">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="products" class="grid"></section>
+
+    <aside id="cart" class="hidden">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: <strong id="cart-total">₹0</strong></p>
+      <button id="checkout">Place Order</button>
+      <p id="message"></p>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

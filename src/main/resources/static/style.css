@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #f4f6f8; color: #222; }
+header { display: flex; justify-content: space-between; align-items: center;
+         padding: 12px 24px; background: #232f3e; color: #fff; }
+header h1 { margin: 0; font-size: 1.3rem; }
+button { background: #f0a30a; border: 0; border-radius: 6px; padding: 8px 14px;
+         cursor: pointer; font-weight: 600; }
+button:hover { background: #d98f00; }
+main { display: flex; gap: 20px; padding: 24px; align-items: flex-start; }
+.grid { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 10px; padding: 16px; text-align: center;
+        box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.card .emoji { font-size: 3rem; }
+.card h3 { margin: 8px 0 4px; font-size: 1rem; }
+.card p { margin: 4px 0; color: #666; font-size: .85rem; }
+.price { font-weight: 700; margin: 8px 0; }
+#cart { width: 300px; background: #fff; border-radius: 10px; padding: 16px;
+        box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+#cart.hidden { display: none; }
+#cart ul { list-style: none; padding: 0; margin: 0; }
+#cart li { display: flex; justify-content: space-between; align-items: center;
+           padding: 6px 0; border-bottom: 1px solid #eee; font-size: .9rem; }
+#cart li button { padding: 2px 8px; margin-left: 4px; }
+.total { text-align: right; }
+#message { font-size: .9rem; }
+.ok { color: #1a7f37; } .err { color: #c62828; }
