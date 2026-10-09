@@ -2,8 +2,8 @@ pipeline{
     agent any
 
     tools{
-        jdk 'jdk-21'
-        maven 'maven-3'
+        jdk 'jdk21'
+        maven 'maven3'
     }
     environment{
         IMAGE_NAME = 'apurva2318/shopping-app'
