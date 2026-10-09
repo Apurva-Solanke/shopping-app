@@ -29,10 +29,4 @@ Sample order:
     curl -X POST localhost:8080/api/orders -H "Content-Type: application/json" \
          -d '{"items":[{"productId":1,"quantity":2}]}'
 
-## Your tasks (not included on purpose)
 
-1. Write the `Dockerfile` (hint: build with Maven, run the jar on a Java 21 image, expose 8080).
-2. Write the `Jenkinsfile` (checkout, build + test, docker build, push, optional deploy).
-3. Write Kubernetes manifests (Deployment + Service, use `/actuator/health` for probes).
-
-Note: orders are stored in memory, so they reset whenever the container restarts.
